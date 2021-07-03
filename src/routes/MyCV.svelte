@@ -310,7 +310,6 @@ button{
 
 
 <div class="container">
-    <button on:click="{()=>{downloadPDF()}}">download</button>
     <div class="cv" id="cv">
         <div class="topPart">
             <div class="imagePart">
