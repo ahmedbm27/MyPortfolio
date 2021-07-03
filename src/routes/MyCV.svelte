@@ -760,7 +760,7 @@ font-size: 15px;
                         <ul>
                             <li>
                                 {{
-                                    "fr" : "Développé le front-end de chaque page du démarrage Unify de",
+                                    "fr" : "Développé le front-end de chaque page du startup Unify de",
                                         "en" :"Developed the front end of every single page of Unify startup of"
                                     }[$lang]} <a href="https://unify.tn" target="_blank">unify.tn</a> 
                                     {{"fr" : "et de",
