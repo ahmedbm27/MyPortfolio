@@ -418,6 +418,9 @@ margin-right: 10px;
 .bottomPart{
     flex-direction: column
 }
+.cv2 .bottomPart{
+    flex-direction: column-reverse
+}
 .bottomPart .leftPart,.bottomPart .rightPart{
     width: 100%;
     padding: 0;
@@ -833,7 +836,7 @@ font-size: 15px;
 
     </div>
 
-    <div class="cv" id="cv">
+    <div class="cv cv2" id="cv">
         <div class="rectangle2"></div>
        <div class="bottomPart">
             <div class="leftPart">
