@@ -1,21 +1,6 @@
 
 <script>
-let downloadPDF = () =>{
-    let doc  = new jsPDF()
-    let source = document.getElementById("cv")[0];
-    var elementHandler = {
-  '#ignorePDF': function (element, renderer) {
-    return true;
-  }
-};
-    console.log(source,15,
-    15,
-    {
-      'width': 180,'elementHandlers': elementHandler
-    }););
-    doc.fromHTML(source)
-    doc.save("test.pdf")
-}
+
 let infos = [
     {
         icon:"./imgs/icons/call.svg",
