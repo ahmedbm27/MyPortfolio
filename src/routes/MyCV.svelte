@@ -541,8 +541,8 @@ font-size: 15px;
                     <div class="name">Ahmed Ben Mahmoud</div>
                     <div class="post">
                         {{
-                        "fr" : "Développeur web full stack",
-                        "en" :"Full Stack Web Developer"
+                        "fr" : "Développeur Web Front-end",
+                        "en" :"Front End Web Weveloper"
                         }[$lang]}
                         
                     </div>
@@ -578,7 +578,11 @@ font-size: 15px;
                                 "fr" : "À propos de moi",
                                     "en" :"About Me"
                                 }[$lang]}</div>
-                            <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. accumsan lacus vel facilisis. accumsan lacus vel facilisis. accumsan lacus vel </div>
+                                <div class="paragraph">
+                                    {{
+                                        "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 3 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
+                                        "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 3 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                                </div>
                         </div>
                         <hr>
                     </div>
@@ -696,7 +700,12 @@ font-size: 15px;
                                 "en" :"About Me"
                             }[$lang]}
                         </div>
-                    <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. accumsan lacus vel facilisis. accumsan lacus vel facilisis. accumsan lacus vel </div>
+
+                    <div class="paragraph">
+                        {{
+                            "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 3 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
+                            "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 3 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                    </div>
                 </div>
                 <hr>
                 <div class="personalProjects section">
