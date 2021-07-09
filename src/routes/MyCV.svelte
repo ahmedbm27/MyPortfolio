@@ -534,7 +534,7 @@ font-size: 15px;
     <div class="cv" id="cv">
         <div class="topPart">
             <div class="imagePart">
-                <div class="img"><img src="./imgs/portfolio.png" alt=""></div>
+                <div class="img"><img src="./imgs/portfolio.jpg" alt=""></div>
             </div>
             <div class="namePostContainer">
                 <div class="namePost">
