@@ -1,8 +1,40 @@
 
 <script>
 import {lang} from "../store.js"
+import {navigate} from 'svelte-routing'
+import {onMount} from "svelte"
+onMount(async ()=>{
+
+//change link
+let url = new URL (document.URL);
+let lg = url.searchParams.get("lg");
+let type=url.searchParams.get("type");
+if (type=="download"){
+    if (!lg){
+    navigate("/mycv?lg="+$lang+"&type=download" )
+    }else{
+        $lang=lg
+        console.log("downloading");
+        let downloadLink = {
+            "fr" : "https://drive.google.com/uc?export=download&id=1s8uN-7zWgMiVda8APu2jH-V8tP9v-eGA",
+            "en" : "https://drive.google.com/uc?export=download&id=1KzWa48ne9cadSAo-5cK6fbl6f0NGAuMA"
+            }[$lang]
+            console.log(downloadLink);
+      
+        
+
+    }
+}else{
+    if (!lg){
+    navigate("/mycv?lg="+$lang )
+    }else{
+        $lang=lg
+    }
+}
 
 
+
+})
 
 let clicked=false;
 let infos = [
@@ -59,11 +91,7 @@ let skills = ["JS","HTML","CSS","Svelte","Firebase","Netlify","Wordpress","Git",
 </script>
 
 <style>
-:root {
-  --Yellow: #F1BB1B;
-  --black: #424242;
-  --gray : #7C7C7C;
-}
+
 .container{
     background-color: #FAFAFA;
     margin: 0;
@@ -516,7 +544,7 @@ font-size: 15px;
         {#if $lang == 'fr'}
                 <img
                     on:click={() => {
-                        $lang = 'en';
+                        navigate("/?lg="+$lang)
                     }}
                     src="/imgs/icons/france-circle.png"
                     alt="fr" />
@@ -524,7 +552,7 @@ font-size: 15px;
             {:else if $lang == 'en'}
                 <img
                     on:click={() => {
-                        $lang = 'fr';
+                        navigate("/?lg="+$lang)
                     }}
                     src="/imgs/icons/uk-circle.png"
                     alt="en" />
@@ -580,8 +608,8 @@ font-size: 15px;
                                 }[$lang]}</div>
                                 <div class="paragraph">
                                     {{
-                                        "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 3 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
-                                        "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 3 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                                        "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
+                                        "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
                                 </div>
                         </div>
                         <hr>
@@ -703,8 +731,8 @@ font-size: 15px;
 
                     <div class="paragraph">
                         {{
-                            "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 3 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
-                            "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 3 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                            "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
+                            "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
                     </div>
                 </div>
                 <hr>
