@@ -33,7 +33,7 @@ let writing = () =>{
         .typeString({'fr':'Développeur JS','en':'JS Developer'}[$lang])
         .pauseFor(1000)
         .deleteAll(7)
-        .typeString({'fr':'administration des affaires','en':'Business Administration'}[$lang])
+        .typeString({'fr':'Diplômé en administration des affaires','en':'Business Administration Graduate'}[$lang])
         .pauseFor(1000)
         .start(); 
 }
