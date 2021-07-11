@@ -226,6 +226,7 @@ nav .close:hover{
                 <img
                     on:click={() => {
                         $lang ='en'
+                        window.history.replaceState({}, '','?lg='+$lang); 
                         writing()
                         
                     }}
@@ -235,6 +236,7 @@ nav .close:hover{
                 <img
                     on:click={() => {
                         $lang ='fr'
+                        window.history.replaceState({}, '','?lg='+$lang); 
                         writing()
                         
                     }}
@@ -280,6 +282,7 @@ nav .close:hover{
                 <img
                     on:click={() => {
                         $lang ='en'
+                        window.history.replaceState({}, '','?lg='+$lang); 
                         writing()
                         
                         
@@ -290,6 +293,7 @@ nav .close:hover{
                 <img
                     on:click={() => {
                         $lang ='fr'
+                        window.history.replaceState({}, '','?lg='+$lang); 
                         writing()
                         
                     }}

@@ -15,6 +15,7 @@
             navigate("/?lg="+$lang )
         }else{
             $lang=lg
+            window.history.replaceState({}, '','?lg='+$lang); 
         }
         writing()
 
