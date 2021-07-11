@@ -544,7 +544,8 @@ font-size: 15px;
         {#if $lang == 'fr'}
                 <img
                     on:click={() => {
-                        navigate("/?lg="+$lang)
+                        $lang="en"
+                        navigate("/mycv?lg="+$lang)
                     }}
                     src="/imgs/icons/france-circle.png"
                     alt="fr" />
@@ -552,7 +553,8 @@ font-size: 15px;
             {:else if $lang == 'en'}
                 <img
                     on:click={() => {
-                        navigate("/?lg="+$lang)
+                        $lang="fr"
+                        navigate("/mycv?lg="+$lang)
                     }}
                     src="/imgs/icons/uk-circle.png"
                     alt="en" />
@@ -570,7 +572,7 @@ font-size: 15px;
                     <div class="post">
                         {{
                         "fr" : "Développeur Web Front-end",
-                        "en" :"Front End Web Weveloper"
+                        "en" :"Front-end Web Developer"
                         }[$lang]}
                         
                     </div>
@@ -608,8 +610,8 @@ font-size: 15px;
                                 }[$lang]}</div>
                                 <div class="paragraph">
                                     {{
-                                        "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
-                                        "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                                        "fr" :"Enthousiaste et motivé fraîchement diplômé en administration des affaires de TBS, Développeur Front-end ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que développeur web front-end. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
+                                        "en" : "Enthusiastic and motivated freshly graduate in business administration from TBS, Front-end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
                                 </div>
                         </div>
                         <hr>
@@ -731,8 +733,8 @@ font-size: 15px;
 
                     <div class="paragraph">
                         {{
-                            "fr" :"Développeur Front end enthousiaste et motivé possédant une longue expérience dans le secteur informatique dans toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que front-end développeur web. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
-                            "en" : "Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                            "fr" :"Enthousiaste et motivé fraîchement diplômé en administration des affaires de TBS, Développeur Front-end ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que développeur web front-end. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
+                            "en" : "Enthusiastic and motivated freshly graduate in business administration from TBS, Front-end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
                     </div>
                 </div>
                 <hr>
@@ -800,12 +802,12 @@ font-size: 15px;
                         <ul>
                             <li>
                                 {{
-                                    "fr" : "Développé le front-end de chaque page du startup Unify de",
-                                        "en" :"Developed the front end of every single page of Unify startup of"
+                                    "fr" : "Où j'ai développé le front-end de chaque page du startup Unify de",
+                                        "en" :"Where I developed the front end of every single page of Unify startup of"
                                     }[$lang]} <a href="https://unify.tn" target="_blank">unify.tn</a> 
                                     {{"fr" : "et de",
                                     "en" :"and of"
-                                }[$lang]} <a href="https://creator.unify.tn" target="_blank">creator.unify.tn</a> </li>
+                                }[$lang]} <a href="https://creator.unify.tn" target="_blank">creator.unify.tn.</a> </li>
                         </ul>
                     </div>
                     <!---->
@@ -820,8 +822,8 @@ font-size: 15px;
                         </div>
                         <ul>
                             <li>
-                                {{"fr" : "responsable du projet E-learning du club MERIT à Tunis Business School. Le projet consiste à enseigner aux membres de nombreuses compétences informatiques de manière créative et à réaliser des vidéos professionnelles sur notre plateforme.",
-                                "en" :"head of the E-learning project of the MERIT club at Tunis Business School. The project involves teaching members many computer skills in a creative way and making professional videos in our platform."
+                                {{"fr" : "Où j'ai été chef de projet E-learning du club MERIT à Tunis Business School. Le projet consiste à enseigner aux membres de nombreuses compétences informatiques de manière créative et à réaliser des vidéos professionnelles sur notre plateforme.",
+                                "en" :"Where I was of the E-learning project manager of MERIT club at Tunis Business School. The project involves teaching members many computer skills in a creative way and making professional videos in our platform."
                                 }[$lang]}
                                </li>
                         </ul>
@@ -837,12 +839,12 @@ font-size: 15px;
                         </div>
                         <ul>
                             <li>
-                                {{"fr" : "J'ai développé le site gigaservices :",
-                                "en" :"I Developed gigaservices website :"
-                                }[$lang]} <a href="https://gigaservices.tn" target="_blank">gigaservices.tn</a> {{"fr" : "et :","en" :"and"}[$lang]} <a href="https://admin.gigaservices.tn" target="_blank">admin.gigaservices.tn</a> </li>
+                                {{"fr" : "J'ai développé le site Gigaservices :",
+                                "en" :"I Developed Gigaservices website :"
+                                }[$lang]} <a href="https://gigaservices.tn" target="_blank">gigaservices.tn</a> {{"fr" : "et :","en" :"and"}[$lang]} <a href="https://admin.gigaservices.tn" target="_blank">admin.gigaservices.tn.</a> </li>
                             <li>
-                                {{"fr" : "J'ai développé le logiciel du gestion de gigaservices",
-                                "en" :"I Developed gigaservices software management "
+                                {{"fr" : "J'ai développé le logiciel du gestion de Gigaservices.",
+                                "en" :"I Developed Gigaservices management software."
                                 }[$lang]}</li>
                         </ul>
                     </div>
@@ -858,8 +860,8 @@ font-size: 15px;
                         </div>
                         <ul>
                             <li>
-                                {{"fr" : "J'ai enseigné des compétences informatiques (en : retouche photo 'Adobe Photoshop et Illustrator', montage vidéo 'Camtasia & After effect', développement Web 'HTML,CSS,JS,PHP et WordPress')",
-                                "en" :'I Taught IT skills ( ie: photo editing "Adobe Photoshop and Illustrator", Video Editing "Camtasia & After effect", Web Development " HTML,CSS,JS,PHP and WordPress") '
+                                {{"fr" : "Où j'ai enseigné des compétences informatiques (en : retouche photo 'Adobe Photoshop et Illustrator', montage vidéo 'Camtasia & After effect', développement Web 'HTML,CSS,JS,PHP et WordPress').",
+                                "en" :'Where I taught IT skills ( ie: photo editing "Adobe Photoshop and Illustrator", Video Editing "Camtasia & After effect", Web Development " HTML,CSS,JS,PHP and WordPress").'
                                 }[$lang]}</li>
                         </ul>
                     </div>
@@ -909,7 +911,7 @@ font-size: 15px;
                         </div>
                         <ul>
                             <li>
-                                {{"fr" : "Contribution à la préparation de toutes les bannières, roll ups, conception de badges et le Développement de l'application de contrôle des visiteurs",
+                                {{"fr" : "Contribution à la préparation de toutes les bannières, roll ups, conception de badges et le Développement de l'application de contrôle des visiteurs.",
                         "en" :'Contributed in the preparation of all the banners, roll ups, badges design and check in application development.'
                             }[$lang]}</li>
                         </ul>
@@ -925,8 +927,8 @@ font-size: 15px;
                         </div>
                         <ul>
                             <li>
-                                {{"fr" : "J'ai formé UGTE TBS, un groupe de plus de 20 personnes aux bases du montage vidéo ( camtasia 9 )",
-                        "en" :'Trained UGTE TBS, a group of more than 20 people video editing basics ( camtasia 9 )'
+                                {{"fr" : "J'ai formé UGTE TBS, un groupe de plus de 20 personnes, aux bases du montage vidéo ( camtasia 9 ).",
+                        "en" :'Trained UGTE TBS, a group of more than 20 people, video editing basics ( camtasia 9 ).'
                             }[$lang]}
                                 </li>
                         </ul>
@@ -957,7 +959,7 @@ font-size: 15px;
                                 "en" :'and '
                                 }[$lang]}
                                 <a href='https://mentornations.org/#/' target="_blank">MentorNations</a>
-                                @GoMyCode
+                                @GoMyCode.
                                     </li>
                             </ul>
                         </div>
@@ -973,8 +975,8 @@ font-size: 15px;
                             </div>
                             <ul>
                                 <li>
-                                    {{"fr" : "Un Certificat de formateur en développement web (WordPress) dans un camp organisé par le club Merit TBS",
-                                "en" :'A Certificate as a trainer in web development (WordPress) in a camp organized by the Merit TBS club'
+                                    {{"fr" : "Un Certificat de formateur en développement web (WordPress) dans un camp organisé par le club Merit TBS.",
+                                "en" :'A Certificate as a trainer in web development (WordPress) in a camp organized by the Merit TBS club.'
                                 }[$lang]}
                                 
                                     </li>
@@ -991,8 +993,8 @@ font-size: 15px;
                             </div>
                             <ul>
                                 <li>
-                                    {{"fr" : "Séances intensives de coaching Wordpress & e-commerce avec un hackathon.",
-                                "en" :'Intensive Wordpress & e-comerce coaching sessions with a hackathon.'
+                                    {{"fr" : "Séances intensives de coaching Wordpress & e-commerce au sein du hackathon.",
+                                "en" :'Intensive Wordpress & e-comerce coaching sessions within hackathon.'
                                 }[$lang]}
                                 
                                     </li>
