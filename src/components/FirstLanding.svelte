@@ -6,6 +6,7 @@
     import {onMount} from 'svelte'
     import { navigate } from "svelte-routing";
 
+    
     onMount(()=>{
 
         //change link
@@ -16,10 +17,17 @@
         }else{
             $lang=lg
             window.history.replaceState({}, '','?lg='+$lang); 
+            
         }
+
+       
         writing()
+        
+        
 
     })
+
+    AOS.init();
 
 let writing = () =>{
     let app = document.getElementById('webDev');
@@ -218,8 +226,9 @@ let writing = () =>{
 }
 @media only screen and (max-width: 570px){
     .bgImg{
-        height: 400px;
+        height: 100vh;
         background-position: 80%;
+        align-items: center;
     }
     .welcomeText{
         font-size: 35px;
@@ -239,7 +248,9 @@ let writing = () =>{
     .myInfo{
        display:none
     }
-    .main{margin: 130px 0 0 50px;}
+    .main{
+        margin: 0px 0 0 50px;    
+    }
 }
 @media only screen and (max-width: 570px){
     .main{margin: 60px 0 0 20px;}
@@ -254,23 +265,23 @@ let writing = () =>{
         <SideNav/>
         <div class="main">
             <div class="welcomeText">
-                <div class="welcome">{{"fr":'Bienvenue dans mon monde',"en":"Welcome To My World"}[$lang]}</div>
-                <div class="hi">{{"fr":"Salut! je suis Ahmed","en":"Hi! I'm Ahmed"}[$lang]}</div>
-                <div class="webDev" id="webDev">{{"fr":"Développeur web","en":"Web Developer"}[$lang]}</div>
-                <div class="build">{{"fr":"Je construis des choses pour le web","en":"I build things for the web"}[$lang]}</div>
+                <div class="welcome" data-aos="fade-right" data-aos-duration="1000"   >{{"fr":'Bienvenue dans mon monde',"en":"Welcome To My World"}[$lang]}</div>
+                <div class="hi" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">{{"fr":"Salut! je suis Ahmed","en":"Hi! I'm Ahmed"}[$lang]}</div>
+                <div class="webDev" id="webDev" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" >{{"fr":"Développeur web","en":"Web Developer"}[$lang]}</div>
+                <div class="build" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700" >{{"fr":"Je construis des choses pour le web","en":"I build things for the web"}[$lang]}</div>
 
-                <div class="downloadBtn"><a href="/mycv?lg={$lang}" target="_blank"><img src="./imgs/icons/download.svg" alt="download">{{"fr":"Télécharger le CV","en":"Download CV"}[$lang]}</a></div>
+                <div class="downloadBtn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"><a href="/mycv?lg={$lang}" target="_blank"><img src="./imgs/icons/download.svg" alt="download">{{"fr":"Télécharger le CV","en":"Download CV"}[$lang]}</a></div>
             </div>
             <div class="myInfo">
-                <div class="email el">
+                <div class="email el" >
                     <div class="title"><img src="./imgs/icons/email.svg" alt="">{{"fr":"Email","en":"Email"}[$lang]}</div>
                     <div class="subtitle"><a href="mailto:contact.ahmedbm@gmail.com">contact.ahmedbm@gmail.com</a> </div>
                 </div>
-                <div class="phone el">
+                <div class="phone el" >
                     <div class="title"><img src="./imgs/icons/call.svg" alt="">{{"fr":"Téléphoner","en":"Phone"}[$lang]}</div>
                     <div class="subtitle"><a href="tel:+21626612708">+216 26 612 708</a></div>
                 </div>
-                <div class="location el">
+                <div class="location el" >
                     <div class="title"><img src="./imgs/icons/pin.svg" alt="">{{"fr":"Location","en":"Location"}[$lang]}</div>
                     <div class="subtitle">{{"fr":"Tunisie, Kélibia","en":"Tunisia, Kelibia"}[$lang]}</div>
                 </div>
