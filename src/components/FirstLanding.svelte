@@ -163,7 +163,7 @@ let writing = () =>{
         margin: 130px 0 0 115px;
     }
     .myInfo{
-        margin-top: 110px;
+        margin-top: 80px;
     }
 }
 @media only screen and (max-width: 1100px){
@@ -182,7 +182,7 @@ let writing = () =>{
         margin: 130px 0 0 60px;
     }
     .myInfo{
-        margin-top: 90px;
+        margin-top: 80px;
     }
     .myInfo .el .title{
         font-size: 20px;
@@ -205,7 +205,7 @@ let writing = () =>{
     }
     .downloadBtn{margin-top: 30px;}
     .main{
-        margin: 130px 0 0 20px;
+        margin: 100px 0 0 20px;
     }
     .myInfo{
         margin-top: 30px;
@@ -222,7 +222,7 @@ let writing = () =>{
     }
 }
 @media only screen and (max-width: 700px){
-    .main{margin: 130px 0 0 50px;}   
+    .main{margin: 100px 0 0 50px;}   
 }
 @media only screen and (max-width: 570px){
     .bgImg{
