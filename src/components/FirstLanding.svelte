@@ -68,6 +68,7 @@ let writing = () =>{
     display: flex;
     flex-direction: column;
     margin: 230px 0 0 115px;
+    justify-content: space-between;
 }
 .welcomeText{
     color: white;
@@ -88,7 +89,7 @@ let writing = () =>{
 
 }
 .downloadBtn{
-    margin-top: 80px;
+    margin-top: 60px;
     background-color: var(--primary);
     color: white  !important;
     width: max-content;
@@ -122,7 +123,7 @@ let writing = () =>{
     display: flex;
     flex-direction: row;
     color: white;
-    margin-top: 160px;
+    margin-bottom: 75px;
     background-color: rgba(0,0,0,0.1);
     padding: 10px;
     border-radius: 10px;
@@ -157,59 +158,34 @@ let writing = () =>{
 }
 @media only screen and (max-width: 1500px){
     .bgImg{
-        height: 800px;
-    }
-    .main{
-        margin: 130px 0 0 115px;
-    }
-    .myInfo{
-        margin-top: 80px;
-    }
-}
-@media only screen and (max-width: 1100px){
-    .bgImg{
-        height: 700px;
-    }
-    .welcomeText{
-        font-size: 60px;
-    }
-    .welcome{font-size: 20px;}
-    .build{
-        font-size: 40px;
+        height: 768px;
+        background-position: 75%;
     }
     .downloadBtn{margin-top: 50px;}
-    .main{
-        margin: 130px 0 0 60px;
-    }
-    .myInfo{
-        margin-top: 80px;
-    }
-    .myInfo .el .title{
-        font-size: 20px;
-    }
-    .myInfo .el .subtitle{
-        font-size: 14px;
-    }
+    .main{margin: 150px 0 0 60px;}
+    .myInfo{margin-bottom: 10px;}
+    
+}
+@media only screen and (max-width: 1100px){
+    .bgImg{height: 700px;}
+    .welcomeText{font-size: 60px;}
+    .welcome{font-size: 20px;}
+    .build{font-size: 40px;}
+    .myInfo .el .title{font-size: 20px;}
+    .myInfo .el .subtitle{font-size: 14px;}
+    .main{margin: 100px 0 0 60px;}
 }
 
 @media only screen and (max-width: 950px){
-    .bgImg{
-        height: 500px;
-    }
-    .welcomeText{
-        font-size: 40px;
-    }
+    .bgImg{height: 500px;}
+    .welcomeText{font-size: 40px;}
     .welcome{font-size: 18px;}
     .build{
         font-size: 30px;
     }
     .downloadBtn{margin-top: 30px;}
-    .main{
-        margin: 100px 0 0 20px;
-    }
-    .myInfo{
-        margin-top: 30px;
-    }
+    .main{margin: 100px 0 0 40px;}
+    
     .myInfo .el {
         padding-right: 20px;
         margin-right: 20px;
@@ -222,7 +198,7 @@ let writing = () =>{
     }
 }
 @media only screen and (max-width: 700px){
-    .main{margin: 100px 0 0 50px;}   
+    .main{margin: 100px 0 0 40px !important;;}   
 }
 @media only screen and (max-width: 570px){
     .bgImg{
@@ -238,7 +214,7 @@ let writing = () =>{
         font-size: 24px;
     }
     .downloadBtn{
-        margin-top: 30px;
+        margin-top: 15px;
         font-size: 17px;
     }
     .downloadBtn img{
@@ -248,16 +224,9 @@ let writing = () =>{
     .myInfo{
        display:none
     }
-    .main{
-        margin: 0px 0 0 50px;    
-    }
+    .main{margin: 60px 0 0 20px !important;}
 }
-@media only screen and (max-width: 570px){
-    .main{margin: 60px 0 0 20px;}
-    .downloadBtn{
-        margin-top: 15px;
-    }
-}
+
 </style>
 <Nav/>
 <div class="container">

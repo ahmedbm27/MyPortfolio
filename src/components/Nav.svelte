@@ -103,7 +103,8 @@ nav .close:hover{
     }
     #Mobile.opened .lang{
         display: block;
-        margin-top: 25px
+        margin-top: 25px;
+        margin-left:20px;
     }
     #Mobile{
     display:flex;
@@ -111,11 +112,9 @@ nav .close:hover{
     position: absolute;
     top: 0;
     right: 0;
-    width: 0;
-    padding: 0;
     background-color: #101010;
     height: 100vh;
-    align-items: center;
+    align-items: flex-start;
     z-index: 3;
     transition: width 300ms;
     }
@@ -123,8 +122,8 @@ nav .close:hover{
         display: none !important;
     }
     #Mobile.opened{
-        width: 200px;
-        padding: 30px 50px;
+        width: 250px;
+        padding: 30px 10px;
     }
     #Mobile.opened .list{
         display: flex !important;
@@ -141,7 +140,8 @@ nav .close:hover{
     #Mobile .list.main{
         display: flex;
         flex-direction: column;
-        width: unset !important
+        width: unset !important;
+        margin-left:80px;
     }
     #Mobile .list.main .el{
         margin: 10px 0;
@@ -153,7 +153,8 @@ nav .close:hover{
         display: none;
     }
     nav .list.side{
-        margin-top: 25px;
+        margin-left:10px;
+        margin-top: 110px;
     }
     nav .list.side a{
     margin: 0 10px;
@@ -170,7 +171,9 @@ nav .close:hover{
         flex-direction: column;
         justify-content: center;
         color:white;
-        margin-top: 25px;
+        margin-top: 20px;
+        margin-left:20px;
+        
     }
     .list.info .el{
         display: flex;

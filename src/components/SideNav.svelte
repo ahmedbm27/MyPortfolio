@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 145px;
+    min-width: 145px;
     height: 100%;
     border-right: 2px solid gray;
     z-index: 2;
@@ -28,7 +29,11 @@ a img:hover{
     align-items: center;
     justify-content: flex-end;
 }
-
+@media only screen and (max-width:1500px){
+    .list{
+        margin-bottom: 10px;
+    }
+}
 @media only screen and (max-width: 700px){
    
    .sideNav{
