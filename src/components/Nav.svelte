@@ -34,7 +34,7 @@ $: console.log($lang)
     align-items: center;
     padding: 0 40px;
     height: 120px;
-    position: fixed;
+    position: absolute;
     z-index: 3;
     width: 100%;
 }
