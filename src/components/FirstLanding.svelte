@@ -247,7 +247,7 @@ let writing = () =>{
                     <div class="subtitle"><a href="mailto:contact.ahmedbm@gmail.com">contact.ahmedbm@gmail.com</a> </div>
                 </div>
                 <div class="phone el" >
-                    <div class="title"><img src="./imgs/icons/call.svg" alt="">{{"fr":"Téléphoner","en":"Phone"}[$lang]}</div>
+                    <div class="title"><img src="./imgs/icons/call.svg" alt="">{{"fr":"Téléphone","en":"Phone"}[$lang]}</div>
                     <div class="subtitle"><a href="tel:+21626612708">+216 26 612 708</a></div>
                 </div>
                 <div class="location el" >
