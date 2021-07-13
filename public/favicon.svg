@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9004d;
+      }
+
+      .cls-2 {
+        font-size: 84.667px;
+        fill: #fff;
+        font-family: "Proxima Nova";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="127.5" cy="128.5" r="126"/>
+  <text id="A" class="cls-2" transform="translate(60.162 187.133) scale(2.299)">A</text>
+</svg>
