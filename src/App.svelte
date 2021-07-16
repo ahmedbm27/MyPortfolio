@@ -2,7 +2,7 @@
 import { Router, Link, Route } from "svelte-routing";
 import MyCV from "./routes/MyCV.svelte";
 import Landing from "./routes/Landing.svelte";
-
+import WorkingOnIt from "./routes/WorkingOnIt.svelte";
   export let url = "";
 </script>
 
@@ -13,4 +13,5 @@ import Landing from "./routes/Landing.svelte";
 <Router url="{url}">
     <Route path="/"><Landing /></Route>
 	  <Route path="/mycv"><MyCV /></Route>
-  </Router>
+    <Route path="/*"><WorkingOnIt /></Route>
+</Router>

@@ -37,6 +37,7 @@ $: console.log($lang)
     position: absolute;
     z-index: 3;
     width: 100%;
+    box-sizing: border-box;
 }
 nav .logo img{
     width: 60px;
