@@ -150,17 +150,17 @@ max-height: unset;
 
 </style>
 
-<div class="aboutMe" id="#aboutMe">
+<div class="aboutMe" id="aboutMe">
 <img class="p1" src="./imgs/patterns/p1.png" alt="pattern">
 <img class="p2" src="./imgs/patterns/p4.png" alt="pattern">
    
     <div class="title">
-        <h1>{{
+        <h1 data-aos="fade-right" data-aos-duration="1000">{{
             "en":"About me",
             "fr":"À propos de moi"
             }[$lang]}
         </h1>
-        <h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000">
             {{
             "en":"more...",
             "fr":"plus ..."
@@ -168,14 +168,14 @@ max-height: unset;
         </h1>
     </div>
     <div class="content">
-        <p>
+        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
             {{
             "en":"Enthusiastic and motivated Front end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer.",
             "fr":"Enthousiaste et motivé fraîchement diplômé en administration des affaires de TBS, Développeur Front-end ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que développeur web front-end. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior."
             }[$lang]}
             
         </p>
-        <p class="here">
+        <p class="here" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
             {{
                 "en":"Here are a few technologies I've been working with recently:",
                 "fr":"Voici quelques technologies que je travaille avec récemment:"
@@ -183,12 +183,12 @@ max-height: unset;
             
         </p>
         <ul>
-            <li>JavaScript</li>
-            <li>Svelte</li>
-            <li>Firebase</li>
-            <li>HTML5 / CSS3</li>
-            <li>Node.js</li>
-            <li>WordPress</li>
+            <li data-aos="fade-right" data-aos-duration="1000">JavaScript</li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Svelte</li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Firebase</li>
+            <li data-aos="fade-left" data-aos-duration="1000" >HTML5 / CSS3</li>
+            <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">Node.js</li>
+            <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">WordPress</li>
         </ul>
     </div>  
 

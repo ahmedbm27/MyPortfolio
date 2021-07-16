@@ -110,21 +110,29 @@ nav .close:hover{
     #Mobile{
     display:flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
+    right:0;
     background-color: #101010;
     height: 100vh;
     align-items: flex-start;
     z-index: 3;
-    transition: width 300ms;
+    width: 250px;
+    padding: 30px 10px;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    -webkit-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    transform: translateX(300px);
     }
     #Mobile .list{
         display: none !important;
     }
     #Mobile.opened{
-        width: 250px;
-        padding: 30px 10px;
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px)
+        
     }
     #Mobile.opened .list{
         display: flex !important;
@@ -148,7 +156,7 @@ nav .close:hover{
         margin: 10px 0;
     }
     #Desktop{
-        width: 91%;
+        width: 100%;
     }
     #Desktop .list{
         display: none;
@@ -196,7 +204,7 @@ nav .close:hover{
 
 @media only screen and (max-width: 800px){
 #Desktop{
-    width: 85%;
+    width: 100%;
 }
 #Desktop .logo img{
     width: 40px;
@@ -218,10 +226,10 @@ nav .close:hover{
     
     <div class="list">
         <div class="el"><a href="#Portfolio">Portfolio</a></div>
-        <div class="el"><a href="#AboutMe">About me</a></div>
+        <div class="el"><a href="#aboutMe">About me</a></div>
+        <div class="el"><a href="#work">Work</a></div>
         <div class="el"><a href="#Education">Education</a></div>
         <div class="el"><a href="#Experience">Experience</a></div>
-        <div class="el"><a href="#Work">Work</a></div>
         <div class="el"><a href="#Contact">Contact</a></div>
     </div>
 
@@ -255,10 +263,10 @@ nav .close:hover{
     class="close" class:opened src="./imgs/icons/cancel.svg" alt="">
     <div class="list main">
         <div class="el"><a href="#Portfolio">Portfolio</a></div>
-        <div class="el"><a href="#AboutMe">About me</a></div>
+        <div class="el"><a href="#aboutMe">About me</a></div>
+        <div class="el"><a href="#work">Work</a></div>
         <div class="el"><a href="#Education">Education</a></div>
         <div class="el"><a href="#Experience">Experience</a></div>
-        <div class="el"><a href="#Work">Work</a></div>
         <div class="el"><a href="#Contact">Contact</a></div>
     </div>
     <div class="list side">

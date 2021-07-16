@@ -5,6 +5,7 @@ import {lang} from "../store.js"
 let colors =["#F9004D","#40D774","#ECAF02","#F74539","#017FDD","#9E37AA","#F1BB1B","#FF0000"]
 let patterns = ["p1","p2","p3","p4"]
 let done = false
+
 onMount(async()=>{
 
     await works.map(el =>{
@@ -244,13 +245,13 @@ filter: var(--hoverFilter)
 <div class="work" id="work">
 
 
-<h1>{{"en":"/Projects","fr":"/Projets"}[$lang]}</h1>
-<h2>{{"en":"Some Things I've Built","fr":"Quelques choses que j'ai construit"}[$lang]}</h2>
+<h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">{{"en":"/Projects","fr":"/Projets"}[$lang]}</h1>
+<h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">{{"en":"Some Things I've Built","fr":"Quelques choses que j'ai construit"}[$lang]}</h2>
 {#if done}
 <div class="workCards">
 
-    {#each works as work}
-    <div class="singleCard">
+    {#each works as work,index}
+    <div class="singleCard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={150*index} >
         <div class="logo" style="background-color:{work.color} !important">
 
             <img src="{work.logo}" alt="logo">
