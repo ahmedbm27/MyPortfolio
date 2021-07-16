@@ -242,7 +242,7 @@ filter: var(--hoverFilter)
 }
 </style>
 
-<div class="work" id="work">
+<div class="work" id="projets">
 
 
 <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">{{"en":"/Projects","fr":"/Projets"}[$lang]}</h1>

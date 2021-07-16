@@ -229,7 +229,7 @@ let writing = () =>{
 
 </style>
 <Nav/>
-<div class="container">
+<div class="container" id="home">
     <div class="bgImg">
         <SideNav/>
         <div class="main">

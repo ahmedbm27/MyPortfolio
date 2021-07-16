@@ -3,6 +3,16 @@ import {navigate} from 'svelte-routing'
 import {lang} from "../store.js"
 import Typewriter from 'typewriter-effect/dist/core';
 
+let navScroll=false
+document.addEventListener("scroll",()=>{
+    let scroll = document.documentElement.scrollTop
+    if(scroll >= 200){
+        navScroll = true
+    }else if (scroll <= 10){
+        navScroll=false
+    }
+
+})
 
 let writing = () =>{
     let app = document.getElementById('webDev');
@@ -38,6 +48,27 @@ $: console.log($lang)
     z-index: 3;
     width: 100%;
     box-sizing: border-box;
+    transition: all ease 0.5s;
+}
+
+#Desktop.navScroll{
+    position: fixed;
+    background-color: white;
+    height: 80px;
+
+}
+
+#Desktop.navScroll .list a {
+color: black;
+}
+#Desktop.navScroll .list a:hover {
+color: var(--primary)
+}
+#Desktop.navScroll .open{
+    filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(60deg) brightness(91%) contrast(108%);
+}
+#Desktop.navScroll .open:hover{
+    filter: invert(14%) sepia(74%) saturate(6320%) hue-rotate(335deg) brightness(94%) contrast(108%);
 }
 nav .logo img{
     width: 60px;
@@ -215,8 +246,8 @@ nav .close:hover{
 }
 }
 </style>
-<nav id="Desktop">
-    
+<nav id="Desktop" class:navScroll>
+
     <div class="logo">
         <img src="./imgs/logo.svg" alt="logo">
     </div>
@@ -225,12 +256,12 @@ nav .close:hover{
     class="open" class:opened src="./imgs/icons/menu.svg" alt="">
     
     <div class="list">
-        <div class="el"><a href="#Portfolio">Portfolio</a></div>
-        <div class="el"><a href="#aboutMe">About me</a></div>
-        <div class="el"><a href="#work">Work</a></div>
-        <div class="el"><a href="#Education">Education</a></div>
-        <div class="el"><a href="#Experience">Experience</a></div>
-        <div class="el"><a href="#Contact">Contact</a></div>
+        <div class="el"><a href="#home">{{"en":"Home","fr":"Accueil"}[$lang]}</a></div>
+        <div class="el"><a href="#aboutMe">{{"en":"About me","fr":"À propos de moi"}[$lang]}</a></div>
+        <div class="el"><a href="#projets">{{"en":"Projects","fr":"Projets"}[$lang]}</a></div>
+        <div class="el"><a href="#Education">{{"en":"Education","fr":"Éducation"}[$lang]}</a></div>
+        <div class="el"><a href="#Experience">{{"en":"Experience","fr":"Expérience"}[$lang]}</a></div>
+        <div class="el"><a href="#Contact">{{"en":"Contact","fr":"Contact"}[$lang]}</a></div>
     </div>
 
     <div class="lang">
@@ -262,12 +293,12 @@ nav .close:hover{
     on:click="{()=>{opened=!opened}}"
     class="close" class:opened src="./imgs/icons/cancel.svg" alt="">
     <div class="list main">
-        <div class="el"><a href="#Portfolio">Portfolio</a></div>
-        <div class="el"><a href="#aboutMe">About me</a></div>
-        <div class="el"><a href="#work">Work</a></div>
-        <div class="el"><a href="#Education">Education</a></div>
-        <div class="el"><a href="#Experience">Experience</a></div>
-        <div class="el"><a href="#Contact">Contact</a></div>
+        <div class="el"><a href="#home">{{"en":"Home","fr":"Accueil"}[$lang]}</a></div>
+        <div class="el"><a href="#aboutMe">{{"en":"About me","fr":"À propos de moi"}[$lang]}</a></div>
+        <div class="el"><a href="#projets">{{"en":"Projects","fr":"Projets"}[$lang]}</a></div>
+        <div class="el"><a href="#Education">{{"en":"Education","fr":"Éducation"}[$lang]}</a></div>
+        <div class="el"><a href="#Experience">{{"en":"Experience","fr":"Expérience"}[$lang]}</a></div>
+        <div class="el"><a href="#Contact">{{"en":"Contact","fr":"Contact"}[$lang]}</a></div>
     </div>
     <div class="list side">
         <a href="https://github.com/ahmedbm27" target="_blank"><img src="./imgs/icons/github.svg" alt="github"></a>
