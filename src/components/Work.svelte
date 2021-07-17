@@ -256,7 +256,7 @@ filter: var(--hoverFilter)
 
             <img src="{work.logo}" alt="logo">
         </div>
-        <div class="viewDetails"><a href="/works/{work.link}" target="_blank">{{"en":"View Details","fr":"Voir les détails"}[$lang]}</a> </div>
+        <div class="viewDetails"><a href="{work.demo}" target="_blank">{{"en":"View Details","fr":"Voir les détails"}[$lang]}</a> </div>
 
         <img 
         class="pattern" 

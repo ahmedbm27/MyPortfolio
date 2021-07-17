@@ -54,13 +54,25 @@ let infos = [
         icon:"./imgs/icons/globe.svg",
         titleEN: "Website",
         titleFR:"Site Web",
-        subtitle: "https://ahmedbm.com"
+        subtitle: "ahmedbm.com"
     },
     {
         icon:"./imgs/icons/pin.svg",
         titleEN: "Area",
         titleFR:"Emplacement",
-        subtitle: "66 Avenue Ibn Khaldoun, Kélibia, Nabeul, Tunisia"
+        subtitle: "Tunis,Tunisia"
+    },
+    {
+        icon:"./imgs/icons/github.svg",
+        titleEN: "GitHub",
+        titleFR:"GitHub",
+        subtitle: "github.com/ahmedbm27"
+    },
+    {
+        icon:"./imgs/icons/linkedin.svg",
+        titleEN: "LinkedIn",
+        titleFR:"LinkedIn",
+        subtitle: "linkedin.com/in/ahmedbm27/"
     }
 ];
 
@@ -86,7 +98,7 @@ let languages = [
         score:2
     },
 ]
-let skills = ["JS","HTML","CSS","Svelte","Firebase","Netlify","Wordpress","Git","Java","C","Python","Photoshop","Illustrator","Figma","Video Editing","Ms Office"]
+let skills = ["JavaScript","HTML","CSS","Svelte","Firebase","Netlify","Wordpress","Git","Java","C","Python","Web Scraping","Photoshop","Illustrator","Figma","Video Editing"]
 
 </script>
 
@@ -133,13 +145,13 @@ let skills = ["JS","HTML","CSS","Svelte","Firebase","Netlify","Wordpress","Git",
     justify-content: center;
 }
 .topPart .img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
     border-radius: 50%;
 }
 .topPart .img img{
-    width: 150px;
+    width: 120px;
 }
 
  .rectangle{
@@ -147,7 +159,7 @@ let skills = ["JS","HTML","CSS","Svelte","Firebase","Netlify","Wordpress","Git",
     top: 0;
     left: 0;
     width: 2cm;
-    height: 11.2cm;
+    height: 12.1cm;
     background-color: var(--Yellow);
     z-index: 0;
 }
@@ -168,7 +180,7 @@ let skills = ["JS","HTML","CSS","Svelte","Firebase","Netlify","Wordpress","Git",
 
 }
 .namePost .name{
-    font-size: 40px;
+    font-size: 35px;
     font-family: ProximaNovaExtraBold;
 }
 .namePost .post{
@@ -195,8 +207,7 @@ padding-right: 0.5cm;
 }
 .info{
     display: flex;
-    margin: 20px 0;
-    align-items: center;
+    margin: 15px 0;
 }
 .info .icon img{
     width: 20px;
@@ -320,6 +331,7 @@ hr{
 }
 .singleProject .project,.singlevolunteer .project{
     display: flex;
+    justify-content: space-between;
 }
 .singleProject .project .website ,.singlevolunteer .project{
     margin-left: 20px;
@@ -426,7 +438,10 @@ margin-right: 10px;
 .changeLang img{
     cursor: pointer;
 }
-
+.cv2 .rightPart{
+    width: 100% !important;
+    padding: 0;
+}
 @media  only screen and (max-width:900px){
 .infoAboutContainer{
     display: flex;
@@ -449,6 +464,8 @@ margin-right: 10px;
 .cv2 .bottomPart{
     flex-direction: column-reverse
 }
+
+
 .bottomPart .leftPart,.bottomPart .rightPart{
     width: 100%;
     padding: 0;
@@ -476,7 +493,7 @@ font-size: 20px;
 }
 
 .rectangle{
-    height: 10.2cm;
+    height: 11.8cm;
 }
 }
 
@@ -505,7 +522,7 @@ font-size: 20px;
     margin: 0;
 }
 .rectangle{
-    height: 12.5cm;
+    height: 14.2cm;
 }
 .namePost{
     padding: 10px 6px;
@@ -596,7 +613,11 @@ font-size: 15px;
                                 <div class="icon"><img src="{info.icon}" alt="{info.titleEN}"></div>
                                 <div class="infoContainer">
                                     <div class="title">{{"fr" : info.titleFR , "en" : info.titleEN}[$lang]}</div>
+                                    {#if info.titleEN == "LinkedIn" || info.titleEN == "Website" || info.titleEN=="GitHub"}
+                                    <div class="subtitle"><a href="https://{info.subtitle}"  target="_blank">{info.subtitle}</a></div>
+                                    {:else}
                                     <div class="subtitle">{info.subtitle}</div>
+                                    {/if}
                                 </div>
                             </div>
                             {/each}
@@ -611,7 +632,7 @@ font-size: 15px;
                                 <div class="paragraph">
                                     {{
                                         "fr" :"Enthousiaste et motivé fraîchement diplômé en administration des affaires de TBS, Développeur Front-end ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que développeur web front-end. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
-                                        "en" : "Enthusiastic and motivated freshly graduate in business administration from TBS, Front-end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                                        "en" : "Enthusiastic and motivated freshly graduate in business administration from TBS, Front-end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and more than 3 years of experience as frontend web developer using Svelte as fremework. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
                                 </div>
                         </div>
                         <hr>
@@ -636,12 +657,12 @@ font-size: 15px;
                                 <div class="speciality">
                                     <div class="el">
                                         {{
-                                            "fr" : "principale : Informatique",
+                                            "fr" : "Informatique",
                                             "en" :"Major : IT"
                                             }[$lang]}</div>
                                     <div class="el">
                                         {{
-                                            "fr" : "secondaire : Finance",
+                                            "fr" : "Finance",
                                             "en" :"Minor: Finance"
                                             }[$lang]}</div>
                                 </div>
@@ -656,7 +677,7 @@ font-size: 15px;
                             </div>
                         </div>
                         <!--END TBS-->
-                        <div class="singleEducation">
+                       <!-- <div class="singleEducation">
                             <div class="title">
                                 {{
                                     "fr" : "Développement web full stack",
@@ -667,7 +688,7 @@ font-size: 15px;
                                 <div class="speciality">
                                     <div class="el">2021 - 2023</div>                                </div>
                             </div>
-                        </div>
+                        </div>-->
                         <!--END Holberton School-->
                         <hr>
                     </div>
@@ -733,8 +754,8 @@ font-size: 15px;
 
                     <div class="paragraph">
                         {{
-                            "fr" :"Enthousiaste et motivé fraîchement diplômé en administration des affaires de TBS, Développeur Front-end ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que développeur web front-end. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
-                            "en" : "Enthusiastic and motivated freshly graduate in business administration from TBS, Front-end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and  more than 4 years of experience as front-end web developer. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                            "fr" :"Enthousiaste et motivé fraîchement diplômé en administration des affaires de TBS, Développeur Frontend ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus que 3 ans d'expérience en tant que développeur web frontend en utilisant Svelte comme fremework. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur frontend senior.",
+                            "en" : "Enthusiastic and motivated freshly graduate in business administration from TBS, Frontend developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and more than 3 years of experience as frontend web developer using Svelte as fremework. I am seeking job opportunities that help me improve my IT skills and be a senior frontend developer."}[$lang]}
                     </div>
                 </div>
                 <hr>
@@ -744,24 +765,9 @@ font-size: 15px;
                             "fr" : "Projets personnels",
                             "en" :"Personal Projects"
                         }[$lang]}</div>
-                    <div class="singleProject">
-                        <div class="project">
-                            <div class="projectTitle">Devronic ( 09/2019 - Present )</div>
-                            <div class="website">
-                                {{
-                                    "fr" : "Site Web",
-                                        "en" :"Website"
-                                    }[$lang]} : <a href="https://devronic.com" target="_blank">Devronic.com</a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                {{
-                                    "fr" : "Co-fondateur d'une agence de développement web",
-                                    "en" :"Co-Founder of a web development agency"
-                                    }[$lang]}</li>
-                        </ul>
-                    </div>
+
+
+
                     <div class="singleProject">
                         <div class="project">
                             <div class="projectTitle">Unify startup ( 04/2021 - Present )</div>
@@ -780,6 +786,72 @@ font-size: 15px;
                                     }[$lang]}</li>
                         </ul>
                     </div>
+                    <div class="singleProject">
+                        <div class="project">
+                            <div class="projectTitle">{{
+                                "fr" : "Clonage de l'app de Chat Messenger( 06/2021 )",
+                                "en" :"Messenger Chat App Clone ( 06/2021 )"
+                            }[$lang]}</div>
+                            <div class="website">
+                                {{
+                                    "fr" : "Site Web",
+                                        "en" :"Website"
+                                    }[$lang]} : <a href="https://svelte.messenger.ahmedbm.com" target="_blank">ahmedbm.com</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Où j'ai cloné la célèbre application Messenger de Facebook, pixel parfait avec des fonctionnalités de chat",
+                                    "en" :"Where I cloned the famous Messenger app by Facebook, pixel perfect with chat functionalities."
+                                }[$lang]}
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="singleProject">
+                        <div class="project">
+                            <div class="projectTitle">{{
+                                "fr" : "Clonage de l'application Youtube ( 06/2021 )",
+                                "en" :"Youtube App Clone ( 06/2021 )"
+                            }[$lang]}</div>
+                            <div class="website">
+                                {{
+                                    "fr" : "Site Web",
+                                        "en" :"Website"
+                                    }[$lang]} : <a href="https://svelte.youtube.ahmedbm.com" target="_blank">ahmedbm.com</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Où j'ai  cloné la célèbre application YouTube  pixel parfait avec toutes les fonctionnalités du page d'accueil et de lecteur vidéo",
+                                    "en" :"Where I cloned the famous Youtube app landing and video player page pixel perfect with All functionalities"
+                                }[$lang]}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="singleProject">
+                        <div class="project">
+                            <div class="projectTitle">Devronic ( 09/2019 - Present )</div>
+                            <div class="website">
+                                {{
+                                    "fr" : "Site Web",
+                                        "en" :"Website"
+                                    }[$lang]} : <a href="https://devronic.com" target="_blank">Devronic.com</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Co-fondateur d'une agence de développement web",
+                                    "en" :"Co-Founder of a web development agency"
+                                    }[$lang]}</li>
+                        </ul>
+                    </div>
+                    
                 </div>
                 <hr>
                 
@@ -794,16 +866,16 @@ font-size: 15px;
                         <div class="companyDate">
                             <div class="workTitle">
                                 {{
-                                    "fr" : "Développeur web front-end",
-                                        "en" :"Front end web developer"
+                                    "fr" : "Développeur web frontend",
+                                        "en" :"Frontend web developer"
                                     }[$lang]} @ Unify.tn</div>
                             <div class="date">10/2020 - Present</div>
                         </div>
                         <ul>
                             <li>
                                 {{
-                                    "fr" : "Où j'ai développé le front-end de chaque page du startup Unify de",
-                                        "en" :"Where I developed the front end of every single page of Unify startup of"
+                                    "fr" : "Où j'ai développé le frontend de chaque page du startup Unify de",
+                                        "en" :"Where I developed the frontend of every single page of Unify startup of"
                                     }[$lang]} <a href="https://unify.tn" target="_blank">unify.tn</a> 
                                     {{"fr" : "et de",
                                     "en" :"and of"
@@ -811,40 +883,24 @@ font-size: 15px;
                         </ul>
                     </div>
                     <!---->
-                    <div class="singleWork">
-                        <div class="companyDate">
-                            <div class="workTitle">
-                                {{"fr" : "Chef de projet e-learning",
-                                    "en" :"E-Learning Project Manager"
-                                }[$lang]}
-                                 @ MERIT TBS</div>
-                            <div class="date">10/2018 - 10/2020</div>
-                        </div>
-                        <ul>
-                            <li>
-                                {{"fr" : "Où j'ai été chef de projet E-learning du club MERIT à Tunis Business School. Le projet consiste à enseigner aux membres de nombreuses compétences informatiques de manière créative et à réaliser des vidéos professionnelles sur notre plateforme.",
-                                "en" :"Where I was of the E-learning project manager of MERIT club at Tunis Business School. The project involves teaching members many computer skills in a creative way and making professional videos in our platform."
-                                }[$lang]}
-                               </li>
-                        </ul>
-                    </div>
+                    
                     <!---->
                     <div class="singleWork">
                         <div class="companyDate">
                             <div class="workTitle">
-                                {{"fr" : "Développeur web full stack",
-                                "en" :"Full stack web developer"
+                                {{"fr" : "Développeur web Frontend",
+                                "en" :"Frontend web developer"
                                 }[$lang]} @GigaServices</div>
                             <div class="date">2017 - 2020</div>
                         </div>
                         <ul>
                             <li>
-                                {{"fr" : "J'ai développé le site Gigaservices :",
-                                "en" :"I Developed Gigaservices website :"
+                                {{"fr" : "Où j'ai développé le site Gigaservices :",
+                                "en" :"Where I Developed Gigaservices website :"
                                 }[$lang]} <a href="https://gigaservices.tn" target="_blank">gigaservices.tn</a> {{"fr" : "et :","en" :"and"}[$lang]} <a href="https://admin.gigaservices.tn" target="_blank">admin.gigaservices.tn.</a> </li>
                             <li>
-                                {{"fr" : "J'ai développé le logiciel du gestion de Gigaservices.",
-                                "en" :"I Developed Gigaservices management software."
+                                {{"fr" : "Où j'ai développé le logiciel du gestion de Gigaservices.",
+                                "en" :"Where I Developed Gigaservices management software."
                                 }[$lang]}</li>
                         </ul>
                     </div>
@@ -860,8 +916,8 @@ font-size: 15px;
                         </div>
                         <ul>
                             <li>
-                                {{"fr" : "Où j'ai enseigné des compétences informatiques (en : retouche photo 'Adobe Photoshop et Illustrator', montage vidéo 'Camtasia & After effect', développement Web 'HTML,CSS,JS,PHP et WordPress').",
-                                "en" :'Where I taught IT skills ( ie: photo editing "Adobe Photoshop and Illustrator", Video Editing "Camtasia & After effect", Web Development " HTML,CSS,JS,PHP and WordPress").'
+                                {{"fr" : "Où j'ai enseigné des compétences informatiques (en : retouche photo 'Adobe Photoshop et Illustrator', montage vidéo 'Camtasia & After effect', développement Web 'HTML,CSS,JS,PHP et WordPress') à plus de 50 personnes.",
+                                "en" :'Where I taught IT skills ( ie: photo editing "Adobe Photoshop and Illustrator", Video Editing "Camtasia & After effect", Web Development " HTML,CSS,JS,PHP and WordPress") to more than 50 people.'
                                 }[$lang]}</li>
                         </ul>
                     </div>
@@ -878,7 +934,7 @@ font-size: 15px;
     <div class="cv cv2" id="cv">
         <div class="rectangle2"></div>
        <div class="bottomPart">
-            <div class="leftPart">
+            <!-- <div class="leftPart">
                 <div class="Links section">
                     <div class="title">
                         {{
@@ -895,7 +951,7 @@ font-size: 15px;
                             }[$lang]}<a href="https://ahmedbm.com" target="_blank">ahmedbm.com</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <div class="rightPart">
                 <div class="volunteer section">
                     <div class="title">
@@ -916,6 +972,25 @@ font-size: 15px;
                             }[$lang]}</li>
                         </ul>
                     </div>
+
+
+                    <div class="singlevolunteer">
+                        <div class="project">
+                            <div class="projectTitle">
+                                {{"fr" : "Chef de projet e-learning",
+                                    "en" :"E-Learning Project Manager"
+                                }[$lang]}
+                                 @ MERIT TBS (10/2018 - 10/2020)</div>
+                            
+                        </div>
+                        <ul>
+                            <li>
+                                {{"fr" : "Où j'ai été chef de projet E-learning du club MERIT à Tunis Business School. Le projet consiste à enseigner aux membres de nombreuses compétences informatiques de manière créative et à réaliser des vidéos professionnelles sur notre plateforme.",
+                                "en" :"Where I was of the E-learning project manager of MERIT club at Tunis Business School. The project involves teaching members many computer skills in a creative way and making professional videos in our platform."
+                                }[$lang]}
+                               </li>
+                        </ul>
+                    </div>
                     <!---->
                     <div class="singlevolunteer">
                         <div class="project">
@@ -930,6 +1005,25 @@ font-size: 15px;
                                 {{"fr" : "J'ai formé UGTE TBS, un groupe de plus de 20 personnes, aux bases du montage vidéo ( camtasia 9 ).",
                         "en" :'Trained UGTE TBS, a group of more than 20 people, video editing basics ( camtasia 9 ).'
                             }[$lang]}
+                                </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="singlevolunteer">
+                        <div class="project">
+                            <div class="projectTitle">
+                                {{"fr" : "Organisateur de camp de hackathon numérique",
+                                "en" :'Digital Hackathon Camp Organizer'
+                            }[$lang]}
+                                ( 01/2019 )</div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{"fr" : "Où j'ai organisé avec MERIT Club une session intensive de coaching Wordpress & e-commerce dans le cadre d'un hackathon avec plus de 60 participants.",
+                            "en" :'Where I organized with MERIT Club an Intensive Wordpress & e-comerce coaching sessions within hackathon with more than 60 attendees.'
+                            }[$lang]}
+                            
                                 </li>
                         </ul>
                     </div>
@@ -975,31 +1069,15 @@ font-size: 15px;
                             </div>
                             <ul>
                                 <li>
-                                    {{"fr" : "Un Certificat de formateur en développement web (WordPress) dans un camp organisé par le club Merit TBS.",
-                                "en" :'A Certificate as a trainer in web development (WordPress) in a camp organized by the Merit TBS club.'
+                                    {{"fr" : "Un Certificat de formateur en développement web (WordPress) dans un camp de plus de 60 personnes organisé par le club Merit TBS.",
+                                "en" :'A Certificate as a trainer in web development (WordPress) in a camp with more than 60 people organized by the Merit TBS club.'
                                 }[$lang]}
                                 
                                     </li>
                             </ul>
                         </div>
 
-                        <div class="singlevolunteer">
-                            <div class="project">
-                                <div class="projectTitle">
-                                    {{"fr" : "Organisateur de camp de hackathon numérique",
-                                    "en" :'Digital Hackathon Camp Organizer'
-                                }[$lang]}
-                                    ( 01/2019 )</div>
-                            </div>
-                            <ul>
-                                <li>
-                                    {{"fr" : "Séances intensives de coaching Wordpress & e-commerce au sein du hackathon.",
-                                "en" :'Intensive Wordpress & e-comerce coaching sessions within hackathon.'
-                                }[$lang]}
-                                
-                                    </li>
-                            </ul>
-                        </div>
+                        
                 </div>
                 <hr>
             </div>
