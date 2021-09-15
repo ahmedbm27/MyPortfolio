@@ -46,6 +46,7 @@ a img:hover{
 <div class="sideNav">
     <div class="list">
         <a href="https://github.com/ahmedbm27" target="_blank" ><img src="./imgs/icons/github.svg" alt="github"></a>
+        <a href="https://www.upwork.com/freelancers/~012da3fef68b094cbe" target="_blank" ><img src="./imgs/icons/upwork.svg" alt="upwork"></a>
         <a href="https://www.linkedin.com/in/ahmedbm27/" target="_blank"><img src="./imgs/icons/linkedin.svg" alt="linkedin"></a>
         <a href="https://www.instagram.com/ahmedbenmah" target="_blank"><img src="./imgs/icons/instagram.svg" alt="instagram"></a>
         <a href="https://www.facebook.com/profile.php?id=100014229247552" target="_blank"><img src="./imgs/icons/facebook.svg" alt="facebook"></a>

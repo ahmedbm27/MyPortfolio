@@ -98,7 +98,7 @@ let languages = [
         score:2
     },
 ]
-let skills = ["JavaScript","HTML","CSS","Svelte","Firebase","Netlify","Wordpress","Git","Java","C","Python","Web Scraping","Photoshop","Illustrator","Figma","Video Editing"]
+let skills = ["Svelte","JS","HTML","CSS","Firebase","Netlify","AWS","Nodejs","Expressjs","Serverless","Wordpress","Shopify","Git","Java","C","Python","Photoshop","Illustrator","Figma"]
 
 </script>
 
@@ -588,8 +588,8 @@ font-size: 15px;
                     <div class="name">Ahmed Ben Mahmoud</div>
                     <div class="post">
                         {{
-                        "fr" : "Développeur Web Front-end",
-                        "en" :"Front-end Web Developer"
+                        "fr" : "Développeur Web Full Stack",
+                        "en" :"Full Stack Web Developer"
                         }[$lang]}
                         
                     </div>
@@ -813,7 +813,7 @@ font-size: 15px;
                     <div class="singleProject">
                         <div class="project">
                             <div class="projectTitle">{{
-                                "fr" : "Clonage de l'application Youtube ( 06/2021 )",
+                                "fr" : "Clonage de l'application Youtube (06/2021)",
                                 "en" :"Youtube App Clone ( 06/2021 )"
                             }[$lang]}</div>
                             <div class="website">
@@ -862,7 +862,26 @@ font-size: 15px;
                                 "en" :"Work Experience"
                             }[$lang]}</div>
 
+
                     <div class="singleWork">
+                        <div class="companyDate">
+                            <div class="workTitle">
+                                {{
+                                    "fr" : "Développeur web full stack",
+                                        "en" :"Full stack web developer"
+                                    }[$lang]} @ Expertify.store</div>
+                            <div class="date">07/2021 - Present</div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Freelancer en Upwork en tant que développeur web full stack. Mon travail est de développer des sites Web pour des clients",
+                                        "en" :"Upwork freelancer as a full stack web developer at Expertify agency. My job is to develop websites for clients"
+                                }[$lang]}
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="singleWork">
                         <div class="companyDate">
                             <div class="workTitle">
                                 {{
@@ -881,7 +900,7 @@ font-size: 15px;
                                     "en" :"and of"
                                 }[$lang]} <a href="https://creator.unify.tn" target="_blank">creator.unify.tn.</a> </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!---->
                     
                     <!---->
