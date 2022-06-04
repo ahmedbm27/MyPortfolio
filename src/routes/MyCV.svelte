@@ -867,8 +867,8 @@ font-size: 15px;
                         <div class="companyDate">
                             <div class="workTitle">
                                 {{
-                                    "fr" : "Développeur web full stack",
-                                        "en" :"Full stack web developer"
+                                    "fr" : "Développeur web full  shopify",
+                                        "en" :"Shopify full stack web developer"
                                     }[$lang]} @ Expertify.store</div>
                             <div class="date">08/2021 - Present</div>
                         </div>
