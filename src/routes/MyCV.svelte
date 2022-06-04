@@ -85,12 +85,12 @@ let languages = [
     {
         EN:"English",
         FR:"Anglais",
-        score:4
+        score:5
     },
     {
         EN:"French",
         FR:"Français",
-        score:4
+        score:5
     },
     {
         EN:"German",
@@ -98,7 +98,7 @@ let languages = [
         score:2
     },
 ]
-let skills = ["Svelte","JS","HTML","CSS","Firebase","Netlify","AWS","Nodejs","Expressjs","Serverless","Wordpress","Shopify","Git","Java","C","Python","Photoshop","Illustrator","Figma"]
+let skills = ["Svelte","Shopify","JS","HTML","CSS","Firebase","Netlify","AWS","Nodejs","Expressjs","Serverless","Wordpress","Git","Java","C","Python","Photoshop","Illustrator","Figma"]
 
 </script>
 
@@ -833,7 +833,7 @@ font-size: 15px;
                         </ul>
                     </div>
 
-                    <div class="singleProject">
+                    <!-- <div class="singleProject">
                         <div class="project">
                             <div class="projectTitle">Devronic ( 09/2019 - Present )</div>
                             <div class="website">
@@ -850,7 +850,7 @@ font-size: 15px;
                                     "en" :"Co-Founder of a web development agency"
                                     }[$lang]}</li>
                         </ul>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <hr>
@@ -870,13 +870,13 @@ font-size: 15px;
                                     "fr" : "Développeur web full stack",
                                         "en" :"Full stack web developer"
                                     }[$lang]} @ Expertify.store</div>
-                            <div class="date">07/2021 - Present</div>
+                            <div class="date">08/2021 - Present</div>
                         </div>
                         <ul>
                             <li>
                                 {{
-                                    "fr" : "Freelancer en Upwork en tant que développeur web full stack. Mon travail est de développer des sites Web pour des clients",
-                                        "en" :"Upwork freelancer as a full stack web developer at Expertify agency. My job is to develop websites for clients"
+                                    "fr" : "Freelancer en Upwork (à plein temps) en tant que développeur web full stack (shopify) . Mon travail est de développer des sites Web pour des clients",
+                                        "en" :"Upwork freelancer (full time) as a shopify full stack web developer at Expertify agency. My job is to develop websites for clients"
                                 }[$lang]}
                             </li>
                         </ul>
