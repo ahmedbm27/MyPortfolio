@@ -98,7 +98,7 @@ let languages = [
         score:2
     },
 ]
-let skills = ["Svelte","Shopify","JS","HTML","CSS","Firebase","Netlify","AWS","Nodejs","Expressjs","Serverless","Wordpress","Git","Java","C","Python","Photoshop","Illustrator","Figma"]
+let skills = ["Svelte","Shopify","Nestjs","BigCommerce","Prisma","JS","HTML","CSS","liquid","Firebase","AWS","Nodejs","Expressjs","Git","Java","C","Python","Figma","Photoshop"]
 
 </script>
 
@@ -631,8 +631,8 @@ font-size: 15px;
                                 }[$lang]}</div>
                                 <div class="paragraph">
                                     {{
-                                        "fr" :"Enthousiaste et motivé fraîchement diplômé en administration des affaires de TBS, Développeur Front-end ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que développeur web front-end. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
-                                        "en" : "Enthusiastic and motivated freshly graduate in business administration from TBS, Front-end developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc), and more than 3 years of experience as frontend web developer using Svelte as fremework. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
+                                        "fr" :"Enthousiaste et motivé diplômé en administration des affaires de TBS, Développeur Front-end ayant une longue expérience dans le secteur informatique avec toutes ses dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube et création de contenu...etc), et plus de 4 ans d'expérience en tant que développeur web front-end. Je suis à la recherche d'opportunités d'emploi qui m'aideront à améliorer mes compétences informatiques et à devenir un développeur front-end senior.",
+                                        "en" : "Enthusiastic and motivated graduate in business administration from TBS, Fullstack developer holding a lifelong experience in the IT sector with all its dimensions (Web, Mobile Apps, Web Scraping, Python automation, Youtube and content creation...etc). More than 4 years of experience as frontend web developer using Svelte as fremework. I am seeking job opportunities that help me improve my IT skills and be a senior front-end developer."}[$lang]}
                                 </div>
                         </div>
                         <hr>
@@ -862,15 +862,32 @@ font-size: 15px;
                                 "en" :"Work Experience"
                             }[$lang]}</div>
 
-
                     <div class="singleWork">
                         <div class="companyDate">
                             <div class="workTitle">
                                 {{
-                                    "fr" : "Développeur web full  shopify",
+                                    "fr" : "Développeur web full stack shopify",
+                                        "en" :"Shopify full stack web developer"
+                                    }[$lang]} @ Foxelli Group</div>
+                            <div class="date">06/2022 - Present</div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Développeur Shopify Full Stack chez Foxelligroup. Mon travail consiste à développer et à maintenir les sites Web de commerce électronique de l'entreprise",
+                                    "en" :"Full Stack shopify developer at Foxelligroup. My job is to develop and maintain the company E commerce websites"
+                                }[$lang]}
+                            </li>
+                        </ul>
+                    </div>            
+                    <div class="singleWork">
+                        <div class="companyDate">
+                            <div class="workTitle">
+                                {{
+                                    "fr" : "Développeur web full stack shopify",
                                         "en" :"Shopify full stack web developer"
                                     }[$lang]} @ Expertify.store</div>
-                            <div class="date">08/2021 - Present</div>
+                            <div class="date">08/2021 - 06/2022</div>
                         </div>
                         <ul>
                             <li>
@@ -950,10 +967,10 @@ font-size: 15px;
 
     </div>
 
-    <div class="cv cv2" id="cv">
+   <!--<div class="cv cv2" id="cv">
         <div class="rectangle2"></div>
        <div class="bottomPart">
-            <!-- <div class="leftPart">
+            <div class="leftPart">
                 <div class="Links section">
                     <div class="title">
                         {{
@@ -970,7 +987,7 @@ font-size: 15px;
                             }[$lang]}<a href="https://ahmedbm.com" target="_blank">ahmedbm.com</a></li>
                     </ul>
                 </div>
-            </div> -->
+            </div> 
             <div class="rightPart">
                 <div class="volunteer section">
                     <div class="title">
@@ -1010,7 +1027,6 @@ font-size: 15px;
                                </li>
                         </ul>
                     </div>
-                    <!---->
                     <div class="singlevolunteer">
                         <div class="project">
                             <div class="projectTitle">
@@ -1102,6 +1118,7 @@ font-size: 15px;
             </div>
         </div>
     </div>
+--> 
 </div>
 
 
