@@ -631,7 +631,7 @@ font-size: 15px;
                                 }[$lang]}</div>
                                 <div class="paragraph">
                                     {{
-                                        "fr" :"En tant que professionnel dévoué titulaire d'une licence en science d'administration des affaires, spécialisé en informatique et en finance, j'apporte plus de trois ans d'expérience en développement frontend avec Svelte et plus de deux ans en développement Shopify full-stack. Mon expertise s'étend au développement d'applications web et mobiles, à l'automatisation Python, et à diverses technologies incluant JavaScript, HTML, CSS, Firebase, Liquid, et Git. Désireux de m'évoluer en tant que développeur Full Stack Senior, je recherche des rôles qui défient et enrichissent mes compétences en TI dans l'industrie technologique dynamique.",
+                                        "fr" :"Professionnel dédié avec une licence en science d'administration des affaires, spécialisation en IT et finance, j'offre plus de trois ans d'expérience en développement frontend avec Svelte et plus de deux ans en Shopify full-stack. Mon expertise couvre le développement web et mobile, l'automatisation Python, et diverses technologies telles que JavaScript, HTML, CSS, Firebase, Liquid et Git. Aspirant à devenir un développeur Full Stack Senior, je cherche des rôles stimulants pour enrichir mes compétences en IT.",
                                         "en" : "As a dedicated professional with a Bachelor of Science in Business Administration, specializing in IT and Finance, I bring over three years of frontend development experience using Svelte and over two years in full-stack Shopify development. My expertise spans across web and mobile app development, Python automation, and various technologies including JavaScript, HTML, CSS, Firebase, liquid, and Git. Eager to evolve as a Senior Full Stack Developer, I seek roles that challenge and enhance my IT skills in the dynamic tech industry."}[$lang]}
                                 </div>
                         </div>
@@ -754,7 +754,7 @@ font-size: 15px;
 
                     <div class="paragraph">
                         {{
-                            "fr" :"En tant que professionnel dévoué titulaire d'une licence en science d'administration des affaires, spécialisé en informatique et en finance, j'apporte plus de trois ans d'expérience en développement frontend avec Svelte et plus de deux ans en développement Shopify full-stack. Mon expertise s'étend au développement d'applications web et mobiles, à l'automatisation Python, et à diverses technologies incluant JavaScript, HTML, CSS, Firebase, Liquid, et Git. Désireux de m'évoluer en tant que développeur Full Stack Senior, je recherche des rôles qui défient et enrichissent mes compétences en TI dans l'industrie technologique dynamique.",
+                            "fr" :"Professionnel dédié avec une licence en science d'administration des affaires, spécialisation en IT et finance, j'offre plus de trois ans d'expérience en développement frontend avec Svelte et plus de deux ans en Shopify full-stack. Mon expertise couvre le développement web et mobile, l'automatisation Python, et diverses technologies telles que JavaScript, HTML, CSS, Firebase, Liquid et Git. Aspirant à devenir un développeur Full Stack Senior, je cherche des rôles stimulants pour enrichir mes compétences en IT.",
                             "en" : "As a dedicated professional with a Bachelor of Science in Business Administration, specializing in IT and Finance, I bring over three years of frontend development experience using Svelte and over two years in full-stack Shopify development. My expertise spans across web and mobile app development, Python automation, and various technologies including JavaScript, HTML, CSS, Firebase, liquid, and Git. Eager to evolve as a Senior Full Stack Developer, I seek roles that challenge and enhance my IT skills in the dynamic tech industry."}[$lang]}
                     </div>
                 </div>
@@ -874,7 +874,7 @@ font-size: 15px;
                         <ul>
                             <li>
                                 {{
-                                    "fr" : "Développeur Shopify Full Stack chez Foxelligroup. Mon travail consiste à développer et à maintenir les sites Web de commerce électronique de l'entreprise",
+                                    "fr" : "Dev Shopify Full Stack chez Foxelligroup, développe et maintient sites e-commerce de l'entreprise.",
                                     "en" :"Full Stack shopify developer at Foxelligroup. My job is to develop and maintain the company E commerce websites"
                                 }[$lang]}
                             </li>
@@ -892,7 +892,7 @@ font-size: 15px;
                         <ul>
                             <li>
                                 {{
-                                    "fr" : "Freelancer en Upwork (à plein temps) en tant que développeur web full stack (shopify) . Mon travail est de développer des sites Web pour des clients",
+                                    "fr" : "Freelancer full stack Shopify sur Upwork. Je développe des sites web pour clients à temps plein",
                                         "en" :"Upwork freelancer (full time) as a shopify full stack web developer at Expertify agency. My job is to develop websites for clients"
                                 }[$lang]}
                             </li>
