@@ -315,7 +315,7 @@ nav .close:hover{
             <div class="title"><img src="./imgs/icons/call.svg" alt=""></div> <a href="tel:+21626612708">+216 26 612 708</a>
         </div>
         <div class="el">
-            <div class="title"><img src="./imgs/icons/pin.svg" alt=""></div> {{"fr":"Tunisie, Kélibia","en":"Tunisia, Kelibia"}[$lang]}
+            <div class="title"><img src="./imgs/icons/pin.svg" alt=""></div> {{"fr":"Portugal, Lisbonne","en":"Portugal, Lisbon"}[$lang]}
         </div>
 
     </div>
