@@ -252,7 +252,7 @@ let writing = () =>{
                 </div>
                 <div class="location el" >
                     <div class="title"><img src="./imgs/icons/pin.svg" alt="">{{"fr":"Location","en":"Location"}[$lang]}</div>
-                    <div class="subtitle">{{"fr":"Tunisie, Kélibia","en":"Tunisia, Kelibia"}[$lang]}</div>
+                    <div class="subtitle">{{"fr":"Portugal, Lisbonne","en":"Portugal, Lisbon"}[$lang]}</div>
                 </div>
             </div>
         </div>
