@@ -60,7 +60,7 @@ let infos = [
         icon:"./imgs/icons/pin.svg",
         titleEN: "Area",
         titleFR:"Emplacement",
-        subtitle: "Tunis,Tunisia"
+        subtitle: "Portugal, Lisbon"
     },
     {
         icon:"./imgs/icons/github.svg",
