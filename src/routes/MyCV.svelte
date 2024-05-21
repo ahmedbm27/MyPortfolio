@@ -42,7 +42,7 @@ let infos = [
         icon:"./imgs/icons/call.svg",
         titleEN: "Phone",
         titleFR:"Téléphone",
-        subtitle: "+216 26 612 708"
+        subtitle: "+351 920 358 347"
     },
     {
         icon:"./imgs/icons/email.svg",
