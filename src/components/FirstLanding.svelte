@@ -248,7 +248,7 @@ let writing = () =>{
                 </div>
                 <div class="phone el" >
                     <div class="title"><img src="./imgs/icons/call.svg" alt="">{{"fr":"Téléphone","en":"Phone"}[$lang]}</div>
-                    <div class="subtitle"><a href="tel:+21626612708">+216 26 612 708</a></div>
+                    <div class="subtitle"><a href="tel:+351920358347">+351 920 358 347</a></div>
                 </div>
                 <div class="location el" >
                     <div class="title"><img src="./imgs/icons/pin.svg" alt="">{{"fr":"Location","en":"Location"}[$lang]}</div>
