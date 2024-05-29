@@ -78,11 +78,6 @@ let infos = [
 
 let languages = [
     {
-        EN:"Arabic",
-        FR:"arabe",
-        score:5
-    },
-    {
         EN:"English",
         FR:"Anglais",
         score:5
@@ -90,6 +85,11 @@ let languages = [
     {
         EN:"French",
         FR:"Français",
+        score:5
+    },
+    {
+        EN:"Arabic",
+        FR:"arabe",
         score:5
     },
     {
@@ -759,102 +759,6 @@ font-size: 15px;
                     </div>
                 </div>
                 <hr>
-                <div class="personalProjects section">
-                    <div class="title">
-                        {{
-                            "fr" : "Projets personnels",
-                            "en" :"Personal Projects"
-                        }[$lang]}</div>
-
-
-
-                    <div class="singleProject">
-                        <div class="project">
-                            <div class="projectTitle">Unify startup ( 04/2021 - Present )</div>
-                            <div class="website">
-                                {{
-                                    "fr" : "Site Web",
-                                        "en" :"Website"
-                                    }[$lang]} : <a href="https://unify.tn" target="_blank">Unify.tn</a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                {{
-                                    "fr" : "Co-fondateur d'une plateforme orientée créateur de contenu",
-                                    "en" :"Co-Founder of a content creator oriented platform"
-                                    }[$lang]}</li>
-                        </ul>
-                    </div>
-                    <div class="singleProject">
-                        <div class="project">
-                            <div class="projectTitle">{{
-                                "fr" : "Clonage de l'app de Chat Messenger( 06/2021 )",
-                                "en" :"Messenger Chat App Clone ( 06/2021 )"
-                            }[$lang]}</div>
-                            <div class="website">
-                                {{
-                                    "fr" : "Site Web",
-                                        "en" :"Website"
-                                    }[$lang]} : <a href="https://svelte.messenger.ahmedbm.com" target="_blank">ahmedbm.com</a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                {{
-                                    "fr" : "Où j'ai cloné la célèbre application Messenger de Facebook, pixel parfait avec des fonctionnalités de chat",
-                                    "en" :"Where I cloned the famous Messenger app by Facebook, pixel perfect with chat functionalities."
-                                }[$lang]}
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="singleProject">
-                        <div class="project">
-                            <div class="projectTitle">{{
-                                "fr" : "Clonage de l'application Youtube (06/2021)",
-                                "en" :"Youtube App Clone ( 06/2021 )"
-                            }[$lang]}</div>
-                            <div class="website">
-                                {{
-                                    "fr" : "Site Web",
-                                        "en" :"Website"
-                                    }[$lang]} : <a href="https://svelte.youtube.ahmedbm.com" target="_blank">ahmedbm.com</a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                {{
-                                    "fr" : "Où j'ai  cloné la célèbre application YouTube  pixel parfait avec toutes les fonctionnalités du page d'accueil et de lecteur vidéo",
-                                    "en" :"Where I cloned the famous Youtube app landing and video player page pixel perfect with All functionalities"
-                                }[$lang]}
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- <div class="singleProject">
-                        <div class="project">
-                            <div class="projectTitle">Devronic ( 09/2019 - Present )</div>
-                            <div class="website">
-                                {{
-                                    "fr" : "Site Web",
-                                        "en" :"Website"
-                                    }[$lang]} : <a href="https://devronic.com" target="_blank">Devronic.com</a>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                {{
-                                    "fr" : "Co-fondateur d'une agence de développement web",
-                                    "en" :"Co-Founder of a web development agency"
-                                    }[$lang]}</li>
-                        </ul>
-                    </div> -->
-                    
-                </div>
-                <hr>
-                
                 <div class="work section">
                     <div class="title">
                         {{
@@ -958,7 +862,97 @@ font-size: 15px;
                         </ul>
                     </div>
                 </div>
-               
+                <hr>
+                <div class="personalProjects section">
+                    <div class="title">
+                        {{
+                            "fr" : "Projets personnels",
+                            "en" :"Personal Projects"
+                        }[$lang]}</div>
+
+
+
+                    <div class="singleProject">
+                        <div class="project">
+                            <div class="projectTitle">Unify startup ( 2021 - 2024 )</div>
+                            <div class="website">
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Co-fondateur d'une plateforme orientée créateur de contenu",
+                                    "en" :"Co-Founder of a content creator oriented platform"
+                                    }[$lang]}</li>
+                        </ul>
+                    </div>
+                    <div class="singleProject">
+                        <div class="project">
+                            <div class="projectTitle">{{
+                                "fr" : "Clonage de l'app de Chat Messenger( 06/2021 )",
+                                "en" :"Messenger Chat App Clone ( 06/2021 )"
+                            }[$lang]}</div>
+                            <div class="website">
+                                {{
+                                    "fr" : "Site Web",
+                                        "en" :"Website"
+                                    }[$lang]} : <a href="https://svelte.messenger.ahmedbm.com" target="_blank">ahmedbm.com</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Où j'ai cloné la célèbre application Messenger de Facebook, pixel parfait avec des fonctionnalités de chat",
+                                    "en" :"Where I cloned the famous Messenger app by Facebook, pixel perfect with chat functionalities."
+                                }[$lang]}
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="singleProject">
+                        <div class="project">
+                            <div class="projectTitle">{{
+                                "fr" : "Clonage de l'application Youtube (06/2021)",
+                                "en" :"Youtube App Clone ( 06/2021 )"
+                            }[$lang]}</div>
+                            <div class="website">
+                                {{
+                                    "fr" : "Site Web",
+                                        "en" :"Website"
+                                    }[$lang]} : <a href="https://svelte.youtube.ahmedbm.com" target="_blank">ahmedbm.com</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Où j'ai  cloné la célèbre application YouTube  pixel parfait avec toutes les fonctionnalités du page d'accueil et de lecteur vidéo",
+                                    "en" :"Where I cloned the famous Youtube app landing and video player page pixel perfect with All functionalities"
+                                }[$lang]}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="singleProject">
+                        <div class="project">
+                            <div class="projectTitle">Devronic ( 09/2019 - Present )</div>
+                            <div class="website">
+                                {{
+                                    "fr" : "Site Web",
+                                        "en" :"Website"
+                                    }[$lang]} : <a href="https://devronic.com" target="_blank">Devronic.com</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                {{
+                                    "fr" : "Co-fondateur d'une agence de développement web",
+                                    "en" :"Co-Founder of a web development agency"
+                                    }[$lang]}</li>
+                        </ul>
+                    </div> -->
+                    
+                </div>
                 
             </div>
             <!--End right Part-->
